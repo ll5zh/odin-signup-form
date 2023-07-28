@@ -9,11 +9,30 @@ body {
     font-family: "Arial", sans-serif;
 }
 
+@font-face {
+    font-family: "custom";
+    src: url("norse-bold-webfont.woff2") format("woff2");
+    src: url("norse-bold-webfont.woff") format("woff");
+}
+
 .img-container {
     background-image: url("leaf.jpg");
-    background-size: 100%;
+    background-size: 100% 100%;
     width: 400px;
     flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.odin {
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+    background: #0000006c;
+    padding: 1rem 0;
+    font-family: "custom";
+    margin-top: 180px;
 }
 
 .form-container {
@@ -37,7 +56,7 @@ h2, button, .question, p {
     padding-top: 3em;
 }
 
-form {
+.form-white {
     background-color: white;
     padding: 1.5rem 0 2.5rem 0;
     margin-bottom: 1.5rem;
