@@ -1,0 +1,90 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    height: 100%;
+    font-family: "Arial", sans-serif;
+}
+
+.img-container {
+    background-image: url("leaf.jpg");
+    background-size: 100%;
+    width: 400px;
+    flex-shrink: 0;
+}
+
+.form-container {
+    /* min-width: 500px; */
+    background-color: rgb(246, 246, 246);
+    width: 100%;
+}
+
+h2 {
+    max-width: 500px;
+    font-size: 22px;
+    margin-top: 0;
+    font-weight: 600;
+}
+
+h2, button, .question, p {
+    margin-left: 4rem;
+}
+
+#blurb-1 {
+    padding-top: 3em;
+}
+
+form {
+    background-color: white;
+    padding: 1.5rem 0 2.5rem 0;
+    margin-bottom: 1.5rem;
+}
+
+.form-content {
+    display: flex;
+    gap: 2em;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 0.8em;
+    font-weight: 600;
+    color: rgb(88, 88, 88);
+    margin-bottom: 0.5em;
+    letter-spacing: 0.08em;
+}
+
+input {
+    width: 220px;
+    border: 1px solid lightgrey;
+    border-radius: 0.3em;
+    padding: 0.5em;
+}
+
+.col-1, .col-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #596D48;
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    font-weight: bold;
+    padding: 1em 4em;
+    border: none;
+    border-radius: 0.5em;
+}
