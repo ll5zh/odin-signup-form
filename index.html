@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
     <link rel='stylesheet' href='style.css'/>
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <div class="img-container">
@@ -20,7 +21,7 @@
             You <em>know</em> you want to.
         </h2>
 
-        <form action="get">
+        <form action="./index.html">
         <div class="form-white">
             <h2>Let's do this!</h2>
             <div class="form-content">
@@ -35,7 +36,7 @@
                     </div>
                     <div class="question">
                         <label for="password">PASSWORD *</label>
-                        <input type="text" id="password" required />
+                        <input type="password" id="password" name="password "required />
                     </div>
                 </div>
                 <div class="col-2">
@@ -49,12 +50,12 @@
                     </div>
                     <div class="question">
                         <label for="confirm-password">CONFIRM PASSWORD *</label>
-                        <input type="text" id="confirm-password" required />
+                        <input type="password" id="confirm-password" name="confirm" required />
                     </div>
                 </div>
             </div>
         </div>
-        <button type="submit">Create Account</button>
+        <button id="button" type="submit" onclick="validatePassword()">Create Account</button>
         </form>
         
         <p>Already have an account? <a href="./index.html">Log in</a></p>
